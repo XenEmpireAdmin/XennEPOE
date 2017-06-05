@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <RecipeDefs>
 	<RecipeDef Name="SurgeryAdvancedXenn" ParentName="SurgeryFlesh" Abstract="True">
-		<surgeonSurgerySuccessChanceExponent>2</surgeonSurgerySuccessChanceExponent>
-		<roomSurgerySuccessChanceFactorExponent>4</roomSurgerySuccessChanceFactorExponent>
 		<surgerySuccessChanceFactor>0.99</surgerySuccessChanceFactor>
 		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
 		<recipeUsers>
@@ -11,8 +9,6 @@
 	</RecipeDef>
 	
 	<RecipeDef Name="SurgerySurrogateXenn" ParentName="SurgeryFlesh" Abstract="True">
-		<surgeonSurgerySuccessChanceExponent>2</surgeonSurgerySuccessChanceExponent>
-		<roomSurgerySuccessChanceFactorExponent>4</roomSurgerySuccessChanceFactorExponent>
 		<surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
 		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
 		<recipeUsers>
@@ -21,8 +17,6 @@
 	</RecipeDef>
 	
 	<RecipeDef Name="SurgeryNaturalXenn" ParentName="SurgeryFlesh" Abstract="True">
-		<surgeonSurgerySuccessChanceExponent>2</surgeonSurgerySuccessChanceExponent>
-		<roomSurgerySuccessChanceFactorExponent>4</roomSurgerySuccessChanceFactorExponent>
 		<surgerySuccessChanceFactor>0.8</surgerySuccessChanceFactor>
 		<deathOnFailedSurgeryChance>0.3</deathOnFailedSurgeryChance>
 		<recipeUsers>
@@ -31,8 +25,6 @@
 	</RecipeDef>
 	
 	<RecipeDef Name="SurgeryBionicXenn" ParentName="SurgeryFlesh" Abstract="True">
-		<surgeonSurgerySuccessChanceExponent>2</surgeonSurgerySuccessChanceExponent>
-		<roomSurgerySuccessChanceFactorExponent>4</roomSurgerySuccessChanceFactorExponent>
 		<surgerySuccessChanceFactor>0.99</surgerySuccessChanceFactor>
 		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
 		<recipeUsers>
@@ -48,8 +40,6 @@
 	
 	
 		<RecipeDef Name="SurgerySyntheticXenn" ParentName="SurgeryFlesh" Abstract="True">
-		<surgeonSurgerySuccessChanceExponent>2</surgeonSurgerySuccessChanceExponent>
-		<roomSurgerySuccessChanceFactorExponent>4</roomSurgerySuccessChanceFactorExponent>
 		<surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
 		<deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
 		<recipeUsers>
@@ -58,15 +48,13 @@
 	</RecipeDef>
 
 	<RecipeDef Name="SurgerySyntheticVanXenn" ParentName="SurgeryFlesh" Abstract="True">
-		<surgeonSurgerySuccessChanceExponent>2</surgeonSurgerySuccessChanceExponent>
-		<roomSurgerySuccessChanceFactorExponent>4</roomSurgerySuccessChanceFactorExponent>
 		<surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
 		<deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
 	</RecipeDef>
 	
 	
 		<RecipeDef ParentName="SurgerySyntheticXenn">
-		<defName>InstallAIChip</defName>
+		<defName>InstallXAIChip</defName>
 		<label>install AI chip</label>
 		<description>Installs AI chip.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -106,7 +94,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgerySyntheticVanXenn">
-		<defName>InstallJoywire</defName>
+		<defName>InstallXJoywire</defName>
 		<label>install joywire</label>
 		<description>Installs joywire.</description>
 		<workerClass>Recipe_InstallImplant</workerClass>
@@ -146,7 +134,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgerySyntheticVanXenn">
-		<defName>InstallPainstopper</defName>
+		<defName>InstallXPainstopper</defName>
 		<label>install painstopper</label>
 		<description>Installs painstopper.</description>
 		<workerClass>Recipe_InstallImplant</workerClass>
@@ -186,7 +174,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgerySyntheticXenn">
-		<defName>InstallSyntheticLung</defName>
+		<defName>InstallXSyntheticLung</defName>
 		<label>install synthetic lung</label>
 		<description>Installs synthetic lung.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -226,7 +214,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgerySyntheticXenn">
-		<defName>InstallSyntheticStomach</defName>
+		<defName>InstallXSyntheticStomach</defName>
 		<label>install synthetic stomach</label>
 		<description>Installs a synthetic stomach.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -265,7 +253,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgerySyntheticXenn">
-		<defName>InstallSyntheticLiver</defName>
+		<defName>InstallXSyntheticLiver</defName>
 		<label>install synthetic liver</label>
 		<description>Installs a synthetic liver.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -304,7 +292,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgerySyntheticXenn">
-		<defName>InstallSyntheticKidney</defName>
+		<defName>InstallXSyntheticKidney</defName>
 		<label>install synthetic kidney</label>
 		<description>Installs a synthetic kidney.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -344,7 +332,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgerySyntheticXenn">
-		<defName>InstallSyntheticHeart</defName>
+		<defName>InstallXSyntheticHeart</defName>
 		<label>install synthetic heart</label>
 		<description>Installs an artificial heart.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -383,7 +371,7 @@
 	</RecipeDef>
 	
 	<RecipeDef ParentName="SurgeryAdvancedXenn">
-		<defName>InstallAdvancedPowerArm</defName>
+		<defName>InstallXAdvancedPowerArm</defName>
 		<label>install advanced power arm</label>
 		<description>Installs advanced power arm.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -423,7 +411,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryAdvancedXenn">
-		<defName>InstallAdvancedBionicArm</defName>
+		<defName>InstallXAdvancedBionicArm</defName>
 		<label>install advanced bionic arm</label>
 		<description>Installs advanced bionic arm.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -463,7 +451,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryAdvancedXenn">
-		<defName>InstallAdvancedBionicLeg</defName>
+		<defName>InstallXAdvancedBionicLeg</defName>
 		<label>install advanced bionic leg</label>
 		<description>Installs advanced bionic leg.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -504,7 +492,7 @@
 
 
 	<RecipeDef ParentName="SurgeryAdvancedXenn">
-		<defName>InstallAdvancedBionicHand</defName>
+		<defName>InstallXAdvancedBionicHand</defName>
 		<label>install advanced bionic hand</label>
 		<description>Installs advanced bionic hand.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -544,7 +532,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryAdvancedXenn">
-		<defName>InstallAdvancedBionicFoot</defName>
+		<defName>InstallXAdvancedBionicFoot</defName>
 		<label>install advanced bionic foot</label>
 		<description>Installs bionic foot.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -584,7 +572,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryAdvancedXenn">
-		<defName>InstallAdvancedBionicEye</defName>
+		<defName>InstallXAdvancedBionicEye</defName>
 		<label>install advanced bionic eye</label>
 		<description>Installs advanced bionic eye.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -624,7 +612,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryAdvancedXenn">
-		<defName>InstallAdvancedBionicEar</defName>
+		<defName>InstallXAdvancedBionicEar</defName>
 		<label>install advanced bionic ear implant</label>
 		<description>Installs an advanced bionic ear implant.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -664,7 +652,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryAdvancedXenn">
-		<defName>InstallAdvancedBionicJaw</defName>
+		<defName>InstallXAdvancedBionicJaw</defName>
 		<label>install advanced bionic jaw implant</label>
 		<description>Installs advanced bionic jaw.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -703,7 +691,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryAdvancedXenn">
-		<defName>InstallAdvancedBionicSpine</defName>
+		<defName>InstallXAdvancedBionicSpine</defName>
 		<label>install advanced bionic spine implant</label>
 		<description>Installs advanced bionic spine.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -742,7 +730,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryAdvancedXenn">
-		<defName>InstallExoskeletonSuit</defName>
+		<defName>InstallXExoskeletonSuit</defName>
 		<label>install exoskeleton suit</label>
 		<description>Installs exoskeleton suit.</description>
 		<workerClass>Recipe_InstallImplant</workerClass>
@@ -781,7 +769,7 @@
 	</RecipeDef>
 	
 		<RecipeDef ParentName="SurgeryBionicXenn">
-		<defName>InstallPowerArm</defName>
+		<defName>InstallXPowerArm</defName>
 		<label>install power arm</label>
 		<description>Installs power arm.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -821,7 +809,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryBionicXenn">
-		<defName>InstallBionicHand</defName>
+		<defName>InstallXBionicHand</defName>
 		<label>install bionic hand</label>
 		<description>Installs bionic hand.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -861,7 +849,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryBionicXenn">
-		<defName>InstallBionicFoot</defName>
+		<defName>InstallXBionicFoot</defName>
 		<label>install bionic foot</label>
 		<description>Installs bionic foot.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -901,7 +889,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryBionicXenn">
-		<defName>InstallBionicEar</defName>
+		<defName>InstallXBionicEar</defName>
 		<label>install bionic ear implant</label>
 		<description>Installs a bionic ear implant.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -942,7 +930,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryBionicXenn">
-		<defName>InstallBionicJaw</defName>
+		<defName>InstallXBionicJaw</defName>
 		<label>install bionic jaw implant</label>
 		<description>Installs a bionic jaw implant.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -981,7 +969,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryBionicXenn">
-		<defName>InstallSilentJaw</defName>
+		<defName>InstallXSilentJaw</defName>
 		<label>install silent jaw implant</label>
 		<description>Installs a silent jaw implant.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -1020,7 +1008,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryBionicXenn">
-		<defName>InstallBionicSpine</defName>
+		<defName>InstallXBionicSpine</defName>
 		<label>install bionic spine</label>
 		<description>Installs a bionic spine.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -1059,7 +1047,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryBionicXenn">
-		<defName>InstallMedicalRib</defName>
+		<defName>InstallXMedicalRib</defName>
 		<label>install medical rib replacement</label>
 		<description>Installs a medical rib replacement.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -1110,7 +1098,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryBionicXenn">
-		<defName>InstallDruggedRib</defName>
+		<defName>InstallXDruggedRib</defName>
 		<label>install drugged rib</label>
 		<description>Installs a drugged rib.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -1161,7 +1149,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryBionicXenn">
-		<defName>InstallAdrenalineRib</defName>
+		<defName>InstallXAdrenalineRib</defName>
 		<label>install adrenaline rib</label>
 		<description>Installs an adrenaline rib.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -1212,7 +1200,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryBionicXenn">
-		<defName>InstallPainkillerRib</defName>
+		<defName>InstallXPainkillerRib</defName>
 		<label>install painkiller rib</label>
 		<description>Installs a painkiller rib.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -1263,7 +1251,7 @@
 	</RecipeDef>
 	
 		<RecipeDef ParentName="SurgeryNaturalXenn">
-		<defName>InstallNaturalHeart</defName>
+		<defName>InstallXNaturalHeart</defName>
 		<label>install heart</label>
 		<description>Installs heart.</description>
 		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
@@ -1301,7 +1289,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryNaturalXenn">
-		<defName>InstallNaturalLiver</defName>
+		<defName>InstallXNaturalLiver</defName>
 		<label>install liver</label>
 		<description>Installs liver.</description>
 		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
@@ -1339,7 +1327,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryNaturalXenn">
-		<defName>InstallNaturalKidney</defName>
+		<defName>InstallXNaturalKidney</defName>
 		<label>install kidney</label>
 		<description>Installs kidney.</description>
 		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
@@ -1378,7 +1366,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryNaturalXenn">
-		<defName>InstallNaturalLung</defName>
+		<defName>InstallXNaturalLung</defName>
 		<label>install lung</label>
 		<description>Installs lung.</description>
 		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
@@ -1419,7 +1407,7 @@
 	<!-- EPOE -->
 
 	<RecipeDef ParentName="SurgeryNaturalXenn">
-		<defName>InstallNaturalEye</defName>
+		<defName>InstallXNaturalEye</defName>
 		<label>install eye</label>
 		<description>Installs eye.</description>
 		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
@@ -1458,7 +1446,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryNaturalXenn">
-		<defName>InstallNaturalNose</defName>
+		<defName>InstallXNaturalNose</defName>
 		<label>install nose</label>
 		<description>Installs nose.</description>
 		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
@@ -1496,7 +1484,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryNaturalXenn">
-		<defName>InstallNaturalEar</defName>
+		<defName>InstallXNaturalEar</defName>
 		<label>install ear</label>
 		<description>Installs ear.</description>
 		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
@@ -1535,7 +1523,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryNaturalXenn">
-		<defName>InstallNaturalJaw</defName>
+		<defName>InstallXNaturalJaw</defName>
 		<label>install jaw</label>
 		<description>Installs jaw.</description>
 		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
@@ -1573,7 +1561,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryNaturalXenn">
-		<defName>InstallNaturalArm</defName>
+		<defName>InstallXNaturalArm</defName>
 		<label>install arm</label>
 		<description>Installs arm.</description>
 		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
@@ -1612,7 +1600,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryNaturalXenn">
-		<defName>InstallNaturalLeg</defName>
+		<defName>InstallXNaturalLeg</defName>
 		<label>install leg</label>
 		<description>Installs leg.</description>
 		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
@@ -1651,7 +1639,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryNaturalXenn">
-		<defName>InstallNaturalStomach</defName>
+		<defName>InstallXNaturalStomach</defName>
 		<label>install stomach</label>
 		<description>Installs stomach.</description>
 		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
@@ -1689,7 +1677,7 @@
 	</RecipeDef>
 	
 		<RecipeDef ParentName="SurgerySurrogateXenn">
-		<defName>InstallBrainStimulator</defName>
+		<defName>InstallXBrainStimulator</defName>
 		<label>install brain stimulator</label>
 		<description>Installs brain stimulator.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -1729,7 +1717,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgerySurrogateXenn">
-		<defName>InstallSurrogateLung</defName>
+		<defName>InstallXSurrogateLung</defName>
 		<label>install surrogate lung</label>
 		<description>Installs surrogate lung.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -1769,7 +1757,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgerySurrogateXenn">
-		<defName>InstallSurrogateStomach</defName>
+		<defName>InstallXSurrogateStomach</defName>
 		<label>install surrogate stomach</label>
 		<description>Installs a surrogate stomach.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -1808,7 +1796,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgerySurrogateXenn">
-		<defName>InstallSurrogateLiver</defName>
+		<defName>InstallXSurrogateLiver</defName>
 		<label>install surrogate liver</label>
 		<description>Installs a surrogate liver.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -1847,7 +1835,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgerySurrogateXenn">
-		<defName>InstallSurrogateKidney</defName>
+		<defName>InstallXSurrogateKidney</defName>
 		<label>install surrogate kidney</label>
 		<description>Installs a surrogate kidney.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -1887,7 +1875,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgerySurrogateXenn">
-		<defName>InstallSurrogateHeart</defName>
+		<defName>InstallXSurrogateHeart</defName>
 		<label>install surrogate heart</label>
 		<description>Installs an surrogate heart.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -1926,7 +1914,7 @@
 	</RecipeDef>
 	
 		<RecipeDef ParentName="SurgeryBasicXenn">
-		<defName>InstallSteelArm</defName>
+		<defName>InstallXSteelArm</defName>
 		<label>install steel arm</label>
 		<description>Installs steel arm.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -1966,7 +1954,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryBasicXenn">
-		<defName>InstallEyePatch</defName>
+		<defName>InstallXEyePatch</defName>
 		<label>install eye patch</label>
 		<description>Installs eye patch.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -2006,7 +1994,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryBasicXenn">
-		<defName>InstallHookHand</defName>
+		<defName>InstallXHookHand</defName>
 		<label>install hook hand</label>
 		<description>Installs hook hand.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -2047,7 +2035,7 @@
 
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallDenture</defName>
+		<defName>InstallXDenture</defName>
 		<label>install denture</label>
 		<description>Installs a simple denture.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -2086,7 +2074,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryBasicXenn">
-		<defName>InstallWoodenFoot</defName>
+		<defName>InstallXWoodenFoot</defName>
 		<label>install wooden foot</label>
 		<description>Installs a wooden foot.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -2126,7 +2114,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallPegLeg</defName>
+		<defName>InstallXPegLeg</defName>
 		<label>install peg leg</label>
 		<description>Installs a wooden leg.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -2166,7 +2154,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryBasicXenn">
-		<defName>InstallEarBandage</defName>
+		<defName>InstallXEarBandage</defName>
 		<label>install ear bandage</label>
 		<description>Installs an ear bandage.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
